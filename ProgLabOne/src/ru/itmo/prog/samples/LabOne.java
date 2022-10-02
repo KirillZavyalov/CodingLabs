@@ -17,7 +17,7 @@ public class LabOne {
     private static float[] createRandomArray(float min, float max, int amount) {
         float[] randomArray = new float[amount];
         for (int i = 0; i < randomArray.length; i++) {
-            randomArray[i] = ((float)(Math.random() * 31) - 3);
+            randomArray[i] = ((float)(Math.random() * 19) - 3);
         }
         return randomArray;
     }
