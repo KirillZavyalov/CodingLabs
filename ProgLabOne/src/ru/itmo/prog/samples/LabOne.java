@@ -1,4 +1,3 @@
-package ru.itmo.prog.samples;
 public class LabOne {
     public static void main(String[] args) {
         short[] s = createArrayOddSequence( (short)5, (short)17);
