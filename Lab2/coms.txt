@@ -1,0 +1,19 @@
+папку кинуть на сервак
+scp -r -P 2222 Lab2 s368184@helios.cs.ifmo.ru:~/
+
+закомпилить на серве
+javac -d build/classes -cp libs/Pokemon.jar src/ru/itmo/prog/*.java src/ru/itmo/prog/**/*.java
+
+собрать джарник
+jar -cvfm build/libs/sus.jar build/meta/MANIFEST.MF -C build/classes . 
+
+запустить жабник
+java -cp libs/Pokemon.jar -jar build/libs/sus.jar
+
+cd ~/Lab2
+javac -d build/classes -cp libs/Pokemon.jar src/ru/itmo/prog/*.java src/ru/itmo/prog/**/*.java
+jar -cvfm build/libs/sus.jar build/meta/MANIFEST.MF -C build/classes . 
+java -cp libs/Pokemon.jar -jar build/libs/sus.jar
+
+cd ~
+rm -r Lab2/
